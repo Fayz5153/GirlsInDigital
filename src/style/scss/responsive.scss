@@ -1,0 +1,404 @@
+@media (max-width:1440px) {
+  .header {
+    padding: 150px 100px 0 100px;
+  }
+  .header__left{
+    h1{
+      font-size: 65px;
+    }
+    p{
+      font-size: 25px;
+    }
+  }
+  .header__right{
+    img{
+      width: 100%;
+      height: 100%;
+      transform: translateX(0px);
+    }
+  }
+}
+@media (max-width:1440px) {
+  .about{
+    margin: 0 100px 0 100px;
+  }
+  .card{
+    grid-template-columns: 50% 50%;
+    img{
+      width: 100%;
+    }
+  }
+  .direction__card{
+    margin: 0 200px 0 200px;
+  }
+  .tasks{
+    padding: 35px 150px 80px 150px;
+  }
+  .task__card{
+    grid-gap: 50px;
+  }
+  .task__item{
+    &:last-child{
+      width: calc(300% + 100px);
+      .item{
+        width: 50%;
+      }
+    }
+  }
+}
+@media (max-width:1300px) {
+  .card{
+    position: relative;
+    grid-gap: 0;
+    &:nth-child(even){
+      grid-template-columns: 1fr 1.5fr;
+    }
+    &:nth-child(odd){
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+  .card__item{
+    p{
+      font-size: 25px;
+      &::after{
+        width: 150%;
+      }
+    }
+  }
+  .tasks{
+    padding: 35px 100px 80px 100px;
+  }
+  .task__item{
+    &:last-child{
+      .item{
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width:1160px) {
+  .direction__card{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+}
+
+@media (max-width:1024px) {
+  .header {
+    padding: 150px 50px 0 50px;
+  }
+  .header__bg{
+    overflow: hidden;
+    img{
+      width: 150%;
+    }
+  }
+  .header__left{
+    h1{
+      font-size: 45px;
+      margin-top: 30px;
+    }
+    p{
+      font-size: 20px;
+    }
+    a{
+      margin-bottom: 30px;
+    }
+  }
+  .naqsh{
+    left: -30%;
+  }
+  .about{
+    margin: 0 50px 0 50px;
+  }
+  .card{
+    display: flex;
+    &:nth-child(odd){
+      flex-direction: column-reverse;
+    }
+    &:nth-child(even){
+      flex-direction: column;
+    }
+  }
+  .card__item{
+    margin: 20px 0;
+    p{
+      text-align: left !important;
+      &::after{
+        width: 100%;
+      }
+    }
+  }
+  .direction__card{
+    margin: 0 100px 0 100px;
+  }
+  .task__card{
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .task__item{
+    .item{
+      height: auto;
+      min-height: 120px;
+    }
+    &:last-child{
+      width: 100%;
+      .item{
+        width: 100%;
+      }
+    }
+  }
+  .result__card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .contact__item{
+    padding: 20px;
+  }
+}
+
+@media (max-width:840px) {
+  .contactus{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px 0 50px;
+  }
+  .DC{
+    height: auto;
+    width: 100%;
+    top: 0;
+  }
+  .map{
+    height: 400px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .header {
+    padding: 150px 20px 0 20px;
+  }
+  .header__left{
+    h1{
+      font-size: 35px;
+    }
+    p{
+      font-size: 15px;
+    }
+    a{
+      font-size: 15px;
+      width: 130px;
+      height: 30px;
+    }
+  }
+  .about{
+    margin: 0 20px 0 20px;
+    .title{
+      padding-bottom: 0;
+    }
+  }
+  .card__item{
+    p{
+      padding: 30px 25px;
+      font-size: 22px;
+    }
+  }
+  .direction__card{
+    margin: 0 50px 0 50px;
+  }
+  .tasks{
+    padding: 35px 50px 80px 50px;
+  }
+  .task__card{
+    grid-gap: 30px;
+  }
+  .contactus{
+    padding: 100px 30px 0 30px;
+  }
+}
+
+@media (max-width:700px) {
+  .header{
+    padding: 100px 20px 0 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .header__left{
+    h1,p{
+      margin-right: 20px;
+    }
+  }
+  .registratsiya{
+    .title{
+      padding-bottom: 60px;
+    }
+  }
+  .reg__form{
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width:650px) {
+  .direction__card{
+    grid-template-columns: 1fr 1fr;
+    img{
+      margin-top: 10px;
+    }
+  }
+  .description{
+    font-size: 24px;
+  }
+  .task__card{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:605px) {
+  .DC{
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width:585px) {
+  .result__card{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:425px) {
+  .header{
+    padding: 100px 10px 0 10px;
+    p{
+      margin: 20px;
+      padding: 0;
+    }
+  }
+  .header__bg{
+    img{
+      width: 250%;
+    }
+  }
+  .about{
+    padding-top: 65px;
+    margin: 0 10px 0 10px;
+  }
+  .card__item{
+    p{
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+  .title{
+    font-size: 35px;
+  }
+  .direction__card{
+    grid-template-columns: 1fr;
+  }
+  .tasks{
+    padding: 35px 10px 40px 10px;
+  }
+  .task__item{
+    .item{
+      min-height: 100px;
+    }
+    span{
+      font-size: 16px;
+    }
+    p{
+      font-size: 16px;
+      padding: 5px 20px;
+    }
+  }
+  #tasks, #direction, .registratsiya, #results{
+    padding-top: 65px;
+  }
+  .result__card{
+    grid-template-columns: 1fr ;
+  }
+  .contactus{
+    padding: 65px 20px 0 20px;
+  }
+  .contact__item{
+    p:nth-child(1){
+      font-size: 22px;
+    }
+    p:nth-child(2){
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .direction__card{
+    margin: 0 20px 0 20px;
+  }
+  .description{
+    padding: 25px 10px 50px 10px;
+  }
+  .task__card{
+    grid-gap: 10px;
+  }
+  .task__item{
+    .item{
+      min-height: 70px;
+    }
+  }
+  .result__item{
+    p{
+      font-size: 16px;
+    }
+  }
+  .contactus{
+    padding: 65px 0 0 0;
+  }
+  .contact__item{
+    p:nth-child(1){
+      font-size: 18px;
+    }
+    p:nth-child(2){
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width:320px) {
+  .header{
+    h1{
+      font-size: 30px;
+      line-height: 45px;
+    }
+    p{
+      line-height: 23px;
+    }
+  }
+  .card__item{
+    p {
+      padding: 15px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .task__item{
+    p{
+      font-size: 14px;
+    }
+  }.result__item{
+    p{
+      font-size: 14px;
+    }
+  }
+  .contact__item{
+    p:nth-child(1){
+      font-size: 16px;
+    }
+    p:nth-child(2){
+      font-size: 14px;
+    }
+  }
+}
